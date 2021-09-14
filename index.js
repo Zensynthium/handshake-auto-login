@@ -19,7 +19,6 @@ const password = process.env.HS_PASSWORD;
   ]);
 
   // Login
-  
   await page.type('#identifier', username);
   await page.type('#password', password);
 
