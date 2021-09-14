@@ -1,12 +1,12 @@
-const puppeteer = require('puppeteer');
 require('dotenv').config();
+const puppeteer = require('puppeteer');
 
 const url = process.env.URL;
 const username = process.env.HS_USERNAME;
 const password = process.env.HS_PASSWORD;
 
 (async () => {
-  //Launch
+  // Launch
   const browser = await puppeteer.launch({ 
     headless: false, 
   });
@@ -19,6 +19,7 @@ const password = process.env.HS_PASSWORD;
   ]);
 
   // Login
+  
   await page.type('#identifier', username);
   await page.type('#password', password);
 
