@@ -7,3 +7,4 @@ Though the functionality of this app is very limited and not worth using without
 
 # License
 MIT
+Copyright (c) Zensynthium
