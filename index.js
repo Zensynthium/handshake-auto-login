@@ -31,4 +31,3 @@ const password = process.env.HS_PASSWORD;
 
   // await browser.close();
 })();
-
