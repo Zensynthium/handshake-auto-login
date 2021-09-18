@@ -8,7 +8,8 @@ const password = process.env.HS_PASSWORD;
 (async () => {
   // Launch
   const browser = await puppeteer.launch({ 
-    headless: false, 
+    headless: false,
+    defaultViewport: null
   });
 
   const page = await browser.newPage();
